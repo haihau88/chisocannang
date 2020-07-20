@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+cannang <input id="kg" type="number" value="cannang">
+chieucao <input id="cm" type="number" value="chieucao">
+<button onclick="Myfunction()" type="button">click xem ket qua</button>
+<script>
+    function Myfunction() {
+        let cannang = document.getElementById('kg').value
+        let chieucao = document.getElementById('cm').value
+        chiso =  cannang / chieucao
+
+        if (chiso < 18.5) {
+            document.write('Underweight')
+        } else if (chiso < 25) {
+            document.write('Normal')
+        } else if (chiso < 30) {
+            document.write('Overweight')
+        } else {
+            document.write('Obese')
+        }
+    }
+</script>
+</body>
+</html>
